@@ -1,0 +1,26 @@
+/**
+ * tsconfigでは型チェックのみを担当し、JSへの変換はBabelが行う
+ */
+
+{
+    "compilerOptions": {
+        "strict": true,
+        "target": "esnext",
+        "allowJs": true,
+        "skipLibCheck": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "jsx": "preserve",
+        "moduleResolution": "node",
+        "noEmit": true,
+        "sourceMap": true,
+        "baseUrl": "./",
+        "paths": {
+            "~/*": ["./dev/*"]
+        },
+        "downlevelIteration": true
+    }
+}
